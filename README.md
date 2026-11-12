@@ -4,6 +4,20 @@ A Dynamic Island for Windows 10 and 11: a small glass pill that sits below the t
 
 Everything runs locally. There is no account, no telemetry and no cloud sync — settings and history live in `%APPDATA%/Notcha`.
 
+## Screenshots
+
+![The Notcha panel on the Home tab](docs/home.png)
+
+| Tasks | Shelf |
+| :-: | :-: |
+| ![Tasks tab](docs/tasks.png) | ![Shelf tab](docs/shelf.png) |
+
+| Focus | Now playing |
+| :-: | :-: |
+| ![Focus tab](docs/focus.png) | ![Now playing tab](docs/music.png) |
+
+![Settings](docs/settings.png)
+
 ## What it does
 
 - **Now playing** — the current track, play/pause and skip, driven by the Windows media session.
