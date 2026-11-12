@@ -73,4 +73,6 @@ resources         Runtime assets copied into the packaged app
 
 ## Licence
 
-Not yet chosen — add a `LICENSE` file before publishing. See the ffmpeg note above for the one component that carries its own licence.
+MIT — see [LICENSE](LICENSE).
+
+The bundled ffmpeg binary is the exception: it ships under its own licence (see the ffmpeg note above), so include that licence text and a source link with any binary release.
