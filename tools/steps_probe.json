@@ -1,0 +1,6 @@
+[
+  {"label": "topology", "tool": "pt_query_topology", "args": {}},
+  {"label": "details-2811", "tool": "pt_get_device_details", "args": {"model": "2811"}},
+  {"label": "modules-2811", "tool": "pt_list_modules", "args": {"router_model": "2811"}},
+  {"label": "details-2960", "tool": "pt_get_device_details", "args": {"model": "2960-24TT"}}
+]

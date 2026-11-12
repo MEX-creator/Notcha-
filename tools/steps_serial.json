@@ -1,0 +1,22 @@
+[
+  {"label": "wic-2t-all", "tool": "pt_install_modules_batch", "args": {"modules": [
+    {"device": "R1", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R2", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R3", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R4", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R5", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R6", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R7", "slot": "0/0", "module": "WIC-2T"},
+    {"device": "R8", "slot": "0/0", "module": "WIC-2T"}
+  ]}, "timeout": 600},
+
+  {"label": "link-R1-R2", "tool": "pt_add_link", "args": {"device1": "R1", "port1": "Serial0/0/0", "device2": "R2", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R2-R3", "tool": "pt_add_link", "args": {"device1": "R2", "port1": "Serial0/0/1", "device2": "R3", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R3-R6", "tool": "pt_add_link", "args": {"device1": "R3", "port1": "Serial0/0/1", "device2": "R6", "port2": "Serial0/0/1", "cable_type": "serial"}},
+  {"label": "link-R6-R5", "tool": "pt_add_link", "args": {"device1": "R6", "port1": "Serial0/0/0", "device2": "R5", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R4-R7", "tool": "pt_add_link", "args": {"device1": "R4", "port1": "Serial0/0/0", "device2": "R7", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R4-R8", "tool": "pt_add_link", "args": {"device1": "R4", "port1": "Serial0/0/1", "device2": "R8", "port2": "Serial0/0/0", "cable_type": "serial"}},
+
+  {"label": "fast-forward", "tool": "pt_fast_forward", "args": {}},
+  {"label": "topology", "tool": "pt_query_topology", "args": {}}
+]

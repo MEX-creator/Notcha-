@@ -1,0 +1,70 @@
+{
+  "name": "notcha",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Notcha - a dynamic island for Windows 10 and 11",
+  "author": "Notcha",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "start": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "icons": "node tools/make-icons.mjs",
+    "package": "electron-vite build && electron-builder --win"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "electron": "^45.2.2",
+    "electron-builder": "^26.18.0",
+    "electron-vite": "^6.0.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.7"
+  },
+  "build": {
+    "appId": "app.notcha.island",
+    "productName": "Notcha",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "out/**/*",
+      "package.json",
+      "node_modules/ffmpeg-static/**/*"
+    ],
+    "asarUnpack": [
+      "node_modules/ffmpeg-static/**"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/bridge.ps1",
+        "to": "bridge.ps1"
+      },
+      {
+        "from": "resources/tray.png",
+        "to": "tray.png"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "shortcutName": "Notcha"
+    }
+  }
+}

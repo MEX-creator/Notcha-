@@ -1,0 +1,366 @@
+[
+ {
+  "label": "auto-cabling-off",
+  "tool": "pt_workspace_options",
+  "result": {
+   "result": "{\"applied\":[\"setDisableAutoCabling\"],\"failed\":[],\"auto_cabling\":false,\"external_network_access\":false,\"show_port_labels\":true,\"show_link_lights\":true,\"show_device_labels\":true,\"using_metric\":true,\"language\":\"default.ptl\",\"config_path\":\"./\",\"changed\":1,\"summary\":\"1 option(s) changed. auto-cabling OFF (you pick the ports)\"}"
+  }
+ },
+ {
+  "label": "add-R1",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R1' (2811) created at (110, 420)."
+  }
+ },
+ {
+  "label": "add-R2",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R2' (2811) created at (270, 420)."
+  }
+ },
+ {
+  "label": "add-R3",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R3' (2811) created at (470, 420)."
+  }
+ },
+ {
+  "label": "add-R4",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R4' (2811) created at (470, 300)."
+  }
+ },
+ {
+  "label": "add-R5",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R5' (2811) created at (830, 420)."
+  }
+ },
+ {
+  "label": "add-R6",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R6' (2811) created at (680, 420)."
+  }
+ },
+ {
+  "label": "add-R7",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R7' (2811) created at (360, 170)."
+  }
+ },
+ {
+  "label": "add-R8",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'R8' (2811) created at (600, 180)."
+  }
+ },
+ {
+  "label": "add-S0",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'S0' (2960-24TT) created at (110, 510)."
+  }
+ },
+ {
+  "label": "add-S1",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'S1' (2960-24TT) created at (270, 510)."
+  }
+ },
+ {
+  "label": "add-S2",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'S2' (2960-24TT) created at (680, 510)."
+  }
+ },
+ {
+  "label": "add-S3",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'S3' (2960-24TT) created at (830, 510)."
+  }
+ },
+ {
+  "label": "add-S4",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'S4' (2960-24TT) created at (470, 90)."
+  }
+ },
+ {
+  "label": "add-S5",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'S5' (2960-24TT) created at (650, 90)."
+  }
+ },
+ {
+  "label": "add-PC0",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'PC0' (PC-PT) created at (110, 590)."
+  }
+ },
+ {
+  "label": "add-PC1",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'PC1' (PC-PT) created at (270, 590)."
+  }
+ },
+ {
+  "label": "add-PC2",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'PC2' (PC-PT) created at (680, 590)."
+  }
+ },
+ {
+  "label": "add-PC3",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'PC3' (PC-PT) created at (830, 590)."
+  }
+ },
+ {
+  "label": "add-PC4",
+  "tool": "pt_add_device",
+  "result": {
+   "result": "Device 'PC4' (PC-PT) created at (790, 90)."
+  }
+ },
+ {
+  "label": "hwic-R1",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R1').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R2",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R2').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R3",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R3').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R4",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R4').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R5",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R5').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R6",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R6').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R7",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R7').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "hwic-R8",
+  "tool": "pt_install_modules_batch",
+  "result": {
+   "result": "Error: module 'HWIC-2T' is not compatible with model '2811' (device 'R8').\nCompatible with: 1941, 2901, 2911"
+  }
+ },
+ {
+  "label": "link-R1-R2",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "ERROR:Port 'Serial0/0/0' not found on 'R1'"
+  }
+ },
+ {
+  "label": "link-R2-R3",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "ERROR:Port 'Serial0/0/1' not found on 'R2'"
+  }
+ },
+ {
+  "label": "link-R3-R6",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "ERROR:Port 'Serial0/0/1' not found on 'R3'"
+  }
+ },
+ {
+  "label": "link-R6-R5",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "ERROR:Port 'Serial0/0/0' not found on 'R6'"
+  }
+ },
+ {
+  "label": "link-R4-R7",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "ERROR:Port 'Serial0/0/0' not found on 'R4'"
+  }
+ },
+ {
+  "label": "link-R4-R8",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "ERROR:Port 'Serial0/0/1' not found on 'R4'"
+  }
+ },
+ {
+  "label": "link-R1-S0",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R1/FastEthernet0/0 <--[straight]--> S0/FastEthernet0/1"
+  }
+ },
+ {
+  "label": "link-R2-S1",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R2/FastEthernet0/0 <--[straight]--> S1/FastEthernet0/1"
+  }
+ },
+ {
+  "label": "link-R3-R4",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R3/FastEthernet0/0 <--[cross]--> R4/FastEthernet0/0"
+  }
+ },
+ {
+  "label": "link-R6-S2",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R6/FastEthernet0/0 <--[straight]--> S2/FastEthernet0/1"
+  }
+ },
+ {
+  "label": "link-R5-S3",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R5/FastEthernet0/0 <--[straight]--> S3/FastEthernet0/1"
+  }
+ },
+ {
+  "label": "link-R7-S4",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R7/FastEthernet0/0 <--[straight]--> S4/FastEthernet0/5"
+  }
+ },
+ {
+  "label": "link-R8-S4",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R8/FastEthernet0/0 <--[straight]--> S4/FastEthernet0/6"
+  }
+ },
+ {
+  "label": "link-R7-R8",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: R7/FastEthernet0/1 <--[cross]--> R8/FastEthernet0/1"
+  }
+ },
+ {
+  "label": "link-S0-PC0",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S0/FastEthernet0/2 <--[straight]--> PC0/FastEthernet0"
+  }
+ },
+ {
+  "label": "link-S1-PC1",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S1/FastEthernet0/2 <--[straight]--> PC1/FastEthernet0"
+  }
+ },
+ {
+  "label": "link-S2-PC2",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S2/FastEthernet0/2 <--[straight]--> PC2/FastEthernet0"
+  }
+ },
+ {
+  "label": "link-S3-PC3",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S3/FastEthernet0/2 <--[straight]--> PC3/FastEthernet0"
+  }
+ },
+ {
+  "label": "link-S5-PC4",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S5/FastEthernet0/5 <--[straight]--> PC4/FastEthernet0"
+  }
+ },
+ {
+  "label": "ec-1",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S4/FastEthernet0/1 <--[straight]--> S5/FastEthernet0/1"
+  }
+ },
+ {
+  "label": "ec-2",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S4/FastEthernet0/2 <--[straight]--> S5/FastEthernet0/2"
+  }
+ },
+ {
+  "label": "ec-3",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S4/FastEthernet0/3 <--[straight]--> S5/FastEthernet0/3"
+  }
+ },
+ {
+  "label": "ec-4",
+  "tool": "pt_add_link",
+  "result": {
+   "result": "Link created: S4/FastEthernet0/4 <--[straight]--> S5/FastEthernet0/4"
+  }
+ },
+ {
+  "label": "topology",
+  "tool": "pt_query_topology",
+  "result": {
+   "result": "DEVICES:20|LINKS:17\n\n  R1                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  Power Distribution Device0 [Power Distribution Device]\n  R2                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  R3                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  R4                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  R5                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  R6                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  R7                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  R8                   [2811]  (Vlan1,FastEthernet0/0,FastEthernet0/1)\n  S0                   [2960-24TT]  (Vlan1,FastEthernet0/1,FastEthernet0/2,FastEthernet0/3,FastEthernet0/4,FastEthernet0/5,FastEthernet0/6,FastEthernet0/7,FastEthernet0/8,FastEthernet0/9,FastEthernet0/10,FastEthernet0/11,FastEthernet0/12,FastEthernet0/13,FastEthernet0/14,FastEthernet0/15,FastEthernet0/16,FastEthernet0/17,FastEthernet0/18,FastEthernet0/19,FastEthernet0/20,FastEthernet0/21,FastEthernet0/22,FastEthernet0/23,FastEthernet0/24,GigabitEthernet0/1,GigabitEthernet0/2)\n  S1                   [2960-24TT]  (Vlan1,FastEthernet0/1,FastEthernet0/2,FastEthernet0/3,FastEthernet0/4,FastEthernet0/5,FastEthernet0/6,FastEthernet0/7,FastEthernet0/8,FastEthernet0/9,FastEthernet0/10,FastEthernet0/11,FastEthernet0/12,FastEthernet0/13,FastEthernet0/14,FastEthernet0/15,FastEthernet0/16,FastEthernet0/17,FastEthernet0/18,FastEthernet0/19,FastEthernet0/20,FastEthernet0/21,FastEthernet0/22,FastEthernet0/23,FastEthernet0/24,GigabitEthernet0/1,GigabitEthernet0/2)\n  S2                   [2960-24TT]  (Vlan1,FastEthernet0/1,FastEthernet0/2,FastEthernet0/3,FastEthernet0/4,FastEthernet0/5,FastEthernet0/6,FastEthernet0/7,FastEthernet0/8,FastEthernet0/9,FastEthernet0/10,FastEthernet0/11,FastEthernet0/12,FastEthernet0/13,FastEthernet0/14,FastEthernet0/15,FastEthernet0/16,FastEthernet0/17,FastEthernet0/18,FastEthernet0/19,FastEthernet0/20,FastEthernet0/21,FastEthernet0/22,FastEthernet0/23,FastEthernet0/24,GigabitEthernet0/1,GigabitEthernet0/2)\n  S3                   [2960-24TT]  (Vlan1,FastEthernet0/1,FastEthernet0/2,FastEthernet0/3,FastEthernet0/4,FastEthernet0/5,FastEthernet0/6,FastEthernet0/7,FastEthernet0/8,FastEthernet0/9,FastEthernet0/10,FastEthernet0/11,FastEthernet0/12,FastEthernet0/13,FastEthernet0/14,FastEthernet0/15,FastEthernet0/16,FastEthernet0/17,FastEthernet0/18,FastEthernet0/19,FastEthernet0/20,FastEthernet0/21,FastEthernet0/22,FastEthernet0/23,FastEthernet0/24,GigabitEthernet0/1,GigabitEthernet0/2)\n  S4                   [2960-24TT]  (Vlan1,FastEthernet0/1,FastEthernet0/2,FastEthernet0/3,FastEthernet0/4,FastEthernet0/5,FastEthernet0/6,FastEthernet0/7,FastEthernet0/8,FastEthernet0/9,FastEthernet0/10,FastEthernet0/11,FastEthernet0/12,FastEthernet0/13,FastEthernet0/14,FastEthernet0/15,FastEthernet0/16,FastEthernet0/17,FastEthernet0/18,FastEthernet0/19,FastEthernet0/20,FastEthernet0/21,FastEthernet0/22,FastEthernet0/23,FastEthernet0/24,GigabitEthernet0/1,GigabitEthernet0/2)\n  S5                   [2960-24TT]  (Vlan1,FastEthernet0/1,FastEthernet0/2,FastEthernet0/3,FastEthernet0/4,FastEthernet0/5,FastEthernet0/6,FastEthernet0/7,FastEthernet0/8,FastEthernet0/9,FastEthernet0/10,FastEthernet0/11,FastEthernet0/12,FastEthernet0/13,FastEthernet0/14,FastEthernet0/15,FastEthernet0/16,FastEthernet0/17,FastEthernet0/18,FastEthernet0/19,FastEthernet0/20,FastEthernet0/21,FastEthernet0/22,FastEthernet0/23,FastEthernet0/24,GigabitEthernet0/1,GigabitEthernet0/2)\n  PC0                  [PC-PT]  (FastEthernet0,Bluetooth)\n  PC1                  [PC-PT]  (FastEthernet0,Bluetooth)\n  PC2                  [PC-PT]  (FastEthernet0,Bluetooth)\n  PC3                  [PC-PT]  (FastEthernet0,Bluetooth)\n  PC4                  [PC-PT]  (FastEthernet0,Bluetooth)\n\n  Links:\n    R1:FastEthernet0/0  <--[straight]-->  S0:FastEthernet0/1\n    R2:FastEthernet0/0  <--[straight]-->  S1:FastEthernet0/1\n    R3:FastEthernet0/0  <--[cross]-->  R4:FastEthernet0/0\n    R6:FastEthernet0/0  <--[straight]-->  S2:FastEthernet0/1\n    R5:FastEthernet0/0  <--[straight]-->  S3:FastEthernet0/1\n    R7:FastEthernet0/0  <--[straight]-->  S4:FastEthernet0/5\n    R8:FastEthernet0/0  <--[straight]-->  S4:FastEthernet0/6\n    R7:FastEthernet0/1  <--[cross]-->  R8:FastEthernet0/1\n    S0:FastEthernet0/2  <--[straight]-->  PC0:FastEthernet0\n    S1:FastEthernet0/2  <--[straight]-->  PC1:FastEthernet0\n    S2:FastEthernet0/2  <--[straight]-->  PC2:FastEthernet0\n    S3:FastEthernet0/2  <--[straight]-->  PC3:FastEthernet0\n    S5:FastEthernet0/5  <--[straight]-->  PC4:FastEthernet0\n    S4:FastEthernet0/1  <--[straight]-->  S5:FastEthernet0/1\n    S4:FastEthernet0/2  <--[straight]-->  S5:FastEthernet0/2\n    S4:FastEthernet0/3  <--[straight]-->  S5:FastEthernet0/3\n    S4:FastEthernet0/4  <--[straight]-->  S5:FastEthernet0/4"
+  }
+ }
+]

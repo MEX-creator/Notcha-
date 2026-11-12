@@ -1,0 +1,63 @@
+[
+  {"label": "auto-cabling-off", "tool": "pt_workspace_options", "args": {"auto_cabling": 0}},
+
+  {"label": "add-R1", "tool": "pt_add_device", "args": {"name": "R1", "model": "2811", "x": 110, "y": 420}},
+  {"label": "add-R2", "tool": "pt_add_device", "args": {"name": "R2", "model": "2811", "x": 270, "y": 420}},
+  {"label": "add-R3", "tool": "pt_add_device", "args": {"name": "R3", "model": "2811", "x": 470, "y": 420}},
+  {"label": "add-R4", "tool": "pt_add_device", "args": {"name": "R4", "model": "2811", "x": 470, "y": 300}},
+  {"label": "add-R5", "tool": "pt_add_device", "args": {"name": "R5", "model": "2811", "x": 830, "y": 420}},
+  {"label": "add-R6", "tool": "pt_add_device", "args": {"name": "R6", "model": "2811", "x": 680, "y": 420}},
+  {"label": "add-R7", "tool": "pt_add_device", "args": {"name": "R7", "model": "2811", "x": 360, "y": 170}},
+  {"label": "add-R8", "tool": "pt_add_device", "args": {"name": "R8", "model": "2811", "x": 600, "y": 180}},
+
+  {"label": "add-S0", "tool": "pt_add_device", "args": {"name": "S0", "model": "2960-24TT", "x": 110, "y": 510}},
+  {"label": "add-S1", "tool": "pt_add_device", "args": {"name": "S1", "model": "2960-24TT", "x": 270, "y": 510}},
+  {"label": "add-S2", "tool": "pt_add_device", "args": {"name": "S2", "model": "2960-24TT", "x": 680, "y": 510}},
+  {"label": "add-S3", "tool": "pt_add_device", "args": {"name": "S3", "model": "2960-24TT", "x": 830, "y": 510}},
+  {"label": "add-S4", "tool": "pt_add_device", "args": {"name": "S4", "model": "2960-24TT", "x": 470, "y": 90}},
+  {"label": "add-S5", "tool": "pt_add_device", "args": {"name": "S5", "model": "2960-24TT", "x": 650, "y": 90}},
+
+  {"label": "add-PC0", "tool": "pt_add_device", "args": {"name": "PC0", "model": "PC-PT", "x": 110, "y": 590}},
+  {"label": "add-PC1", "tool": "pt_add_device", "args": {"name": "PC1", "model": "PC-PT", "x": 270, "y": 590}},
+  {"label": "add-PC2", "tool": "pt_add_device", "args": {"name": "PC2", "model": "PC-PT", "x": 680, "y": 590}},
+  {"label": "add-PC3", "tool": "pt_add_device", "args": {"name": "PC3", "model": "PC-PT", "x": 830, "y": 590}},
+  {"label": "add-PC4", "tool": "pt_add_device", "args": {"name": "PC4", "model": "PC-PT", "x": 790, "y": 90}},
+
+  {"label": "hwic-R1", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R1", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R2", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R2", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R3", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R3", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R4", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R4", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R5", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R5", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R6", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R6", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R7", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R7", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+  {"label": "hwic-R8", "tool": "pt_install_modules_batch", "args": {"modules": [{"device": "R8", "slot": "0/0", "module": "HWIC-2T"}]}, "timeout": 300},
+
+  {"label": "link-R1-R2", "tool": "pt_add_link", "args": {"device1": "R1", "port1": "Serial0/0/0", "device2": "R2", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R2-R3", "tool": "pt_add_link", "args": {"device1": "R2", "port1": "Serial0/0/1", "device2": "R3", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R3-R6", "tool": "pt_add_link", "args": {"device1": "R3", "port1": "Serial0/0/1", "device2": "R6", "port2": "Serial0/0/1", "cable_type": "serial"}},
+  {"label": "link-R6-R5", "tool": "pt_add_link", "args": {"device1": "R6", "port1": "Serial0/0/0", "device2": "R5", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R4-R7", "tool": "pt_add_link", "args": {"device1": "R4", "port1": "Serial0/0/0", "device2": "R7", "port2": "Serial0/0/0", "cable_type": "serial"}},
+  {"label": "link-R4-R8", "tool": "pt_add_link", "args": {"device1": "R4", "port1": "Serial0/0/1", "device2": "R8", "port2": "Serial0/0/0", "cable_type": "serial"}},
+
+  {"label": "link-R1-S0", "tool": "pt_add_link", "args": {"device1": "R1", "port1": "FastEthernet0/0", "device2": "S0", "port2": "FastEthernet0/1", "cable_type": "straight"}},
+  {"label": "link-R2-S1", "tool": "pt_add_link", "args": {"device1": "R2", "port1": "FastEthernet0/0", "device2": "S1", "port2": "FastEthernet0/1", "cable_type": "straight"}},
+  {"label": "link-R3-R4", "tool": "pt_add_link", "args": {"device1": "R3", "port1": "FastEthernet0/0", "device2": "R4", "port2": "FastEthernet0/0", "cable_type": "cross"}},
+  {"label": "link-R6-S2", "tool": "pt_add_link", "args": {"device1": "R6", "port1": "FastEthernet0/0", "device2": "S2", "port2": "FastEthernet0/1", "cable_type": "straight"}},
+  {"label": "link-R5-S3", "tool": "pt_add_link", "args": {"device1": "R5", "port1": "FastEthernet0/0", "device2": "S3", "port2": "FastEthernet0/1", "cable_type": "straight"}},
+  {"label": "link-R7-S4", "tool": "pt_add_link", "args": {"device1": "R7", "port1": "FastEthernet0/0", "device2": "S4", "port2": "FastEthernet0/5", "cable_type": "straight"}},
+  {"label": "link-R8-S4", "tool": "pt_add_link", "args": {"device1": "R8", "port1": "FastEthernet0/0", "device2": "S4", "port2": "FastEthernet0/6", "cable_type": "straight"}},
+  {"label": "link-R7-R8", "tool": "pt_add_link", "args": {"device1": "R7", "port1": "FastEthernet0/1", "device2": "R8", "port2": "FastEthernet0/1", "cable_type": "cross"}},
+
+  {"label": "link-S0-PC0", "tool": "pt_add_link", "args": {"device1": "S0", "port1": "FastEthernet0/2", "device2": "PC0", "port2": "FastEthernet0", "cable_type": "straight"}},
+  {"label": "link-S1-PC1", "tool": "pt_add_link", "args": {"device1": "S1", "port1": "FastEthernet0/2", "device2": "PC1", "port2": "FastEthernet0", "cable_type": "straight"}},
+  {"label": "link-S2-PC2", "tool": "pt_add_link", "args": {"device1": "S2", "port1": "FastEthernet0/2", "device2": "PC2", "port2": "FastEthernet0", "cable_type": "straight"}},
+  {"label": "link-S3-PC3", "tool": "pt_add_link", "args": {"device1": "S3", "port1": "FastEthernet0/2", "device2": "PC3", "port2": "FastEthernet0", "cable_type": "straight"}},
+  {"label": "link-S5-PC4", "tool": "pt_add_link", "args": {"device1": "S5", "port1": "FastEthernet0/5", "device2": "PC4", "port2": "FastEthernet0", "cable_type": "straight"}},
+
+  {"label": "ec-1", "tool": "pt_add_link", "args": {"device1": "S4", "port1": "FastEthernet0/1", "device2": "S5", "port2": "FastEthernet0/1", "cable_type": "straight"}},
+  {"label": "ec-2", "tool": "pt_add_link", "args": {"device1": "S4", "port1": "FastEthernet0/2", "device2": "S5", "port2": "FastEthernet0/2", "cable_type": "straight"}},
+  {"label": "ec-3", "tool": "pt_add_link", "args": {"device1": "S4", "port1": "FastEthernet0/3", "device2": "S5", "port2": "FastEthernet0/3", "cable_type": "straight"}},
+  {"label": "ec-4", "tool": "pt_add_link", "args": {"device1": "S4", "port1": "FastEthernet0/4", "device2": "S5", "port2": "FastEthernet0/4", "cable_type": "straight"}},
+
+  {"label": "topology", "tool": "pt_query_topology", "args": {}}
+]
