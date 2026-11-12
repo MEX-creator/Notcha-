@@ -1,0 +1,71 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # ffmpeg-static downloads its binary in a postinstall script; make sure it
+      # exists even if install scripts were skipped, or the converter ships empty.
+      - name: Ensure ffmpeg binary
+        shell: bash
+        run: |
+          if [ ! -f node_modules/ffmpeg-static/ffmpeg.exe ]; then
+            node node_modules/ffmpeg-static/install.js
+          fi
+          ls -la node_modules/ffmpeg-static/ffmpeg.exe
+
+      - name: Generate icons
+        run: npm run icons
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Build installer
+        run: npm run package
+        env:
+          # No signing certificate in CI: skip the discovery step instead of failing.
+          CSC_IDENTITY_AUTO_DISCOVERY: false
+
+      - name: Upload installer as workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: notcha-installer
+          path: release/*.exe
+          retention-days: 7
+
+      - name: Attach installer to the release
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          TAG="${GITHUB_REF_NAME}"
+          if gh release view "$TAG" >/dev/null 2>&1; then
+            echo "Release $TAG already exists; uploading assets."
+          else
+            gh release create "$TAG" --title "Notcha ${TAG#v}" --generate-notes
+          fi
+          gh release upload "$TAG" release/*.exe THIRD-PARTY-NOTICES.md --clobber
